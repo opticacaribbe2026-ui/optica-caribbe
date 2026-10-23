@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Óptica Caribbe (Doble B): lentes oftálmicos, de sol y armazones con diseños exclusivos. Más de 500 modelos, atención personalizada por WhatsApp y envíos a todo Chile. Moneda 778, local 0106B.">
+    <meta name="theme-color" content="#008080">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%93%3C/text%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="Óptica Caribbe">
+    <meta property="og:title" content="Óptica Caribbe | Tu mirada con estilo caribeño">
+    <meta property="og:description" content="Lentes oftálmicos, de sol y armazones con diseños exclusivos. Mira la galería y consúltanos por WhatsApp.">
+    <!-- Para que se vea la imagen al compartir, cambia por la URL completa de tu dominio, ej: https://tudominio.cl/images/octubre-2026/1.webp -->
+    <meta property="og:image" content="images/local/local.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Óptica Caribbe | Tu mirada con estilo caribeño</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        caribbe: {
+                            DEFAULT: '#008080',
+                            dark: '#005f5f',
+                            light: '#e6f2f2',
+                            gold: '#d4af37',
+                            navy: '#0b1d3a',
+                            turquoise: '#40e0d0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(11,29,58,0.92) 0%, rgba(0,128,128,0.85) 100%);
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa771c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-whatsapp {
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- BARRA SUPERIOR DE ANUNCIO -->
+    <div class="bg-caribbe-navy text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+        <span>✨ ¡Envíos a todo Chile y atención personalizada! Escríbenos al <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20quiero%20consultar%20sobre..." target="_blank" class="underline text-caribbe-gold font-bold hover:text-white transition-colors">+56 9 9850 0292</a></span>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-full bg-caribbe flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-glasses text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-caribbe-navy">ÓPTICA <span class="text-caribbe">CARIBBE</span></span>
+                    <span class="block text-[10px] uppercase tracking-widest text-caribbe-gold font-bold">Visión y Estilo</span>
+                </div>
+            </a>
+
+            <!-- Menú Desktop -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#inicio" class="hover:text-caribbe transition-colors">Inicio</a>
+                <a href="#catalogos" class="hover:text-caribbe transition-colors">Catálogos</a>
+                <a href="#galeria" class="hover:text-caribbe transition-colors">Galería</a>
+                <a href="#servicios" class="hover:text-caribbe transition-colors">Servicios</a>
+                <a href="#nosotros" class="hover:text-caribbe transition-colors">Nosotros</a>
+                <a href="#contacto" class="hover:text-caribbe transition-colors">Contacto</a>
+            </div>
+
+            <!-- CTA Botón WhatsApp Desktop -->
+            <div class="hidden md:flex items-center">
+                <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20quiero%20agendar%20una%20consulta%20o%20ver%20modelos" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-lg hover:shadow-emerald-600/30 transition-all flex items-center space-x-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Escríbenos</span>
+                </a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-slate-700 hover:text-caribbe focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú desplegable móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Inicio</a>
+            <a href="#catalogos" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Catálogos de Lentes</a>
+            <a href="#galeria" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Galería</a>
+            <a href="#servicios" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Servicios</a>
+            <a href="#nosotros" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Nosotros</a>
+            <a href="#contacto" class="block py-2 text-slate-700 font-medium hover:text-caribbe">Contacto</a>
+            <div class="pt-2">
+                <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20quiero%20consultar" target="_blank" class="w-full bg-emerald-600 text-white py-3 rounded-xl font-semibold flex items-center justify-center space-x-2 shadow-md">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Abrir WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero-bg text-white py-24 lg:py-36 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center space-x-2 bg-caribbe/40 border border-caribbe-turquoise/30 text-caribbe-turquoise px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span>Tu nueva forma de ver el mundo</span>
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Descubre tu estilo perfecto con <span class="gold-gradient-text">Óptica Caribbe</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 mb-10 leading-relaxed font-light">
+                    Lentes oftálmicos, de sol y armazones con diseños exclusivos. Calidad óptica superior, atención cálida y personalizada para cuidar cada detalle de tu salud visual.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#catalogos" class="bg-caribbe hover:bg-caribbe-dark text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-caribbe/40 transition-all text-center flex items-center justify-center space-x-3">
+                        <i class="fa-solid fa-glasses text-lg"></i>
+                        <span>Ver Catálogos de Lentes</span>
+                    </a>
+                    <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20necesito%20asesor%C3%ADa%20para%20elegir%20unos%20lentes" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-emerald-600/40 transition-all text-center flex items-center justify-center space-x-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Atención por WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden lg:grid grid-cols-2 gap-4 absolute right-8 top-1/2 -translate-y-1/2 w-[420px] rotate-2">
+            <img src="images/nuevos/2.webp" alt="Armazones Óptica Caribbe" class="rounded-2xl shadow-2xl bg-white object-cover h-52 w-full" loading="eager">
+            <img src="images/sol-2027/2.webp" alt="Lentes de sol" class="rounded-2xl shadow-2xl bg-white object-cover h-52 w-full mt-8" loading="eager">
+            <img src="images/merel/3.webp" alt="Armazones Merel" class="rounded-2xl shadow-2xl bg-white object-cover h-52 w-full -mt-4" loading="eager">
+            <img src="images/octubre-2026/3.webp" alt="Colección octubre" class="rounded-2xl shadow-2xl bg-white object-cover h-52 w-full mt-4" loading="eager">
+        </div>
+        <!-- Elemento decorativo inferior -->
+        <div class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-slate-50 to-transparent"></div>
+    </section>
+
+    <!-- BENEFICIOS / CARACTERÍSTICAS -->
+    <section class="py-12 bg-slate-50 relative -mt-6 z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Beneficio 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Calidad Garantizada</h3>
+                        <p class="text-sm text-slate-600">Materiales duraderos, cristales de alta precisión y marcas seleccionadas.</p>
+                    </div>
+                </div>
+                <!-- Beneficio 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-headset text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Asesoría Directa</h3>
+                        <p class="text-sm text-slate-600">Te ayudamos a elegir el armazón ideal según la forma de tu rostro.</p>
+                    </div>
+                </div>
+                <!-- Beneficio 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-truck-fast text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-1">Envíos Seguros</h3>
+                        <p class="text-sm text-slate-600">Despachos rápidos para que disfrutes tus nuevos lentes cuanto antes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CATÁLOGOS DE LENTES -->
+    <section id="catalogos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-caribbe-light px-3 py-1 rounded-full">Nuestras Colecciones</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Catálogos de Lentes 2026</h2>
+                <p class="text-slate-600">Explora nuestros 6 catálogos públicos en Google Drive y encuentra el estilo que va contigo. Puedes abrirlos y consultarnos directamente por tu favorito.</p>
+            </div>
+
+            <!-- Grid de Catálogos (6 opciones) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Catálogo 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-caribbe-navy to-caribbe relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-glasses text-4xl mb-2 text-caribbe-turquoise"></i>
+                            <h3 class="text-xl font-bold">Catálogo 01</h3>
+                            <p class="text-xs text-slate-200 mt-1">Tendencias y Armazones Clásicos</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Visualiza todos los modelos disponibles en nuestra primera colección de temporada.</p>
+                        <a href="https://drive.google.com/file/d/1R8jxFBdHI9nerkIL9wiEerMj6XWSy51N/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 1</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catálogo 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-teal-700 to-cyan-800 relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-sun text-4xl mb-2 text-caribbe-gold"></i>
+                            <h3 class="text-xl font-bold">Catálogo 02</h3>
+                            <p class="text-xs text-slate-200 mt-1">Lentes de Sol & Protección UV</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Protege tu vista con estilo con nuestra selección especial de gafas solares.</p>
+                        <a href="https://drive.google.com/file/d/1YpdHIFJgLEntQ-sr4iVEYlSHov1RPfoO/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 2</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catálogo 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-caribbe-navy relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-eye text-4xl mb-2 text-caribbe-turquoise"></i>
+                            <h3 class="text-xl font-bold">Catálogo 03</h3>
+                            <p class="text-xs text-slate-200 mt-1">Marcos Modernos & Livianos</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Diseños ergonómicos y ultra livianos para máxima comodidad todo el día.</p>
+                        <a href="https://drive.google.com/file/d/1sgfa6T1lAk2Lce_gXxn0aM6ZUcFuxGPB/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 3</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catálogo 4 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-cyan-900 to-teal-800 relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-gem text-4xl mb-2 text-caribbe-gold"></i>
+                            <h3 class="text-xl font-bold">Catálogo 04</h3>
+                            <p class="text-xs text-slate-200 mt-1">Colección Premium & Elegance</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Modelos exclusivos con acabados finos pensados para destacar en cualquier ocasión.</p>
+                        <a href="https://drive.google.com/file/d/1Kmx1Owo8ZvbsSsVmw5D4cnuMMlnNH2eH/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 4</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catálogo 5 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-caribbe-navy to-slate-900 relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-bolt text-4xl mb-2 text-caribbe-turquoise"></i>
+                            <h3 class="text-xl font-bold">Catálogo 05</h3>
+                            <p class="text-xs text-slate-200 mt-1">Estilos Juveniles & Urbanos</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Tendencias vanguardistas, colores vibrantes y formas que marcan tendencia.</p>
+                        <a href="https://drive.google.com/file/d/1gXOXYz-0g4HpUxOx1JYIGzM5lB1AU0w1/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 5</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Catálogo 6 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="h-48 bg-gradient-to-br from-teal-800 to-caribbe relative flex items-center justify-center p-6 text-white overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fa-solid fa-fire text-4xl mb-2 text-caribbe-gold"></i>
+                            <h3 class="text-xl font-bold">Catálogo 06</h3>
+                            <p class="text-xs text-slate-200 mt-1">Novedades & Edición Especial</p>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <p class="text-sm text-slate-600 mb-6">Nuestros últimos ingresos y modelos más solicitados por nuestros clientes.</p>
+                        <a href="https://drive.google.com/file/d/1fFGuiouShlugGyQdq0PpuINp2iRHodI_/view?usp=sharing" target="_blank" class="w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Ver Catálogo 6</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Banner de consulta rápida WhatsApp -->
+            <div class="mt-16 bg-caribbe-light border border-caribbe/20 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="text-left">
+                    <h3 class="text-2xl font-bold text-caribbe-navy mb-2">¿Viste un modelo que te encantó?</h3>
+                    <p class="text-slate-600 text-sm">Toma nota del código del lente o sácale captura y envíanosla por WhatsApp para cotizar stock y cristales.</p>
+                </div>
+                <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20vi%20un%20modelo%20en%20los%20cat%C3%A1logos%20y%20quiero%20consultar%20precio" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shrink-0 flex items-center space-x-2 transition-transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Consultar por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section id="galeria" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-caribbe-light px-3 py-1 rounded-full">Galería de modelos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Mira nuestros modelos y colores</h2>
+                <p class="text-slate-600">Toca una foto para verla en grande y consultar por WhatsApp el modelo que te gustó.</p>
+            </div>
+            <div id="gal-filters" class="flex flex-wrap justify-center gap-2 mb-10"></div>
+            <div id="gal-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+            <div class="text-center mt-10">
+                <button id="gal-more" class="bg-caribbe hover:bg-caribbe-dark text-white font-semibold px-8 py-3 rounded-xl shadow-md transition-colors">Ver más modelos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visor de fotos -->
+    <div id="lightbox" class="hidden fixed inset-0 z-[60] bg-black/90 flex items-center justify-center p-4" role="dialog" aria-modal="true">
+        <button id="lb-close" class="absolute top-4 right-4 text-white text-3xl w-12 h-12" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+        <button id="lb-prev" class="absolute left-2 sm:left-6 text-white text-3xl w-12 h-12" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="lb-next" class="absolute right-2 sm:right-6 text-white text-3xl w-12 h-12" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="flex flex-col items-center max-w-3xl w-full">
+            <img id="lb-img" src="" alt="" class="max-h-[70vh] w-auto max-w-full rounded-xl bg-white object-contain">
+            <p id="lb-cap" class="text-white font-semibold mt-4 text-center"></p>
+            <a id="lb-wa" href="#" target="_blank" rel="noopener" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl flex items-center space-x-2"><i class="fa-brands fa-whatsapp text-xl"></i><span>Consultar este modelo</span></a>
+        </div>
+    </div>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-white px-3 py-1 rounded-full shadow-xs">Lo que hacemos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Nuestros Servicios Ópticos</h2>
+                <p class="text-slate-600">Brindamos una experiencia integral para cuidar de tu visión con tecnología y la mejor asesoría.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-caribbe-light text-caribbe flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Examen Visual</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Evaluación precisa de tu salud visual con profesionales calificados para tu receta exacta.</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-caribbe-light text-caribbe flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-glasses"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lentes Oftálmicos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Cristales antirreflejo, blue block, multifocales y fotocromáticos adaptados a tu armazón favorito.</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-caribbe-light text-caribbe flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Lentes de Sol</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Protección UV total con diseños modernos para hombre y mujer con o sin graduación.</p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-2xl bg-caribbe-light text-caribbe flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Atención Personalizada</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Asesoramiento de imagen y estilo directo vía chat para que elijas con total confianza.</p>
+                </div>
+            </div>
+
+            <!-- Tipos de cristales -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-extrabold text-slate-900 text-center mb-8">Trabajamos todo tipo de cristales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0"><i class="fa-solid fa-eye text-xl"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1"><i class="fa-solid fa-check text-caribbe mr-1"></i>Monofocal</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">Una sola graduación para ver bien de lejos o de cerca. Ideal para uso diario, estudio o computador.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0"><i class="fa-solid fa-glasses text-xl"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1"><i class="fa-solid fa-check text-caribbe mr-1"></i>Bifocal</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">Dos zonas en el mismo cristal: una para ver de lejos y otra para ver de cerca.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-caribbe-light text-caribbe flex items-center justify-center shrink-0"><i class="fa-solid fa-layer-group text-xl"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-1"><i class="fa-solid fa-check text-caribbe mr-1"></i>Multifocal</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed">Visión de lejos, intermedia y de cerca en un solo lente, con transición suave y sin líneas visibles.</p>
+                    </div>
+                </div>
+                </div>
+                <p class="text-center mt-8"><a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20quiero%20consultar%20por%20lentes%20monofocales%2C%20bifocales%20o%20multifocales" target="_blank" rel="noopener" class="inline-flex items-center space-x-2 text-emerald-700 font-semibold hover:underline"><i class="fa-brands fa-whatsapp text-lg"></i><span>Consúltanos qué cristal te conviene</span></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-caribbe-light px-3 py-1 rounded-full">Sobre Óptica Caribbe</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-6">Estilo, calidad y confianza para tu mirada</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        En <strong class="text-slate-900">Óptica Caribbe</strong> combinamos las últimas tendencias en armazones con tecnología óptica de vanguardia. Creemos que usar lentes es una extensión de tu personalidad y estilo de vida.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Nuestro compromiso es ofrecerte una atención cercana, ágil y transparente. Ya sea que necesites renovar tus cristales o quieras lucir un nuevo look caribeño y sofisticado, estamos aquí para guiarte en cada paso.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-slate-100">
+                        <div>
+                            <span class="block text-3xl font-extrabold text-caribbe mb-1">+500</span>
+                            <span class="text-sm text-slate-500 font-medium">Modelos disponibles</span>
+                        </div>
+                        <div>
+                            <span class="block text-3xl font-extrabold text-caribbe mb-1">100%</span>
+                            <span class="text-sm text-slate-500 font-medium">Atención personalizada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-caribbe/10 rounded-3xl p-4 sm:p-8">
+                        <img src="images/local/local.webp" alt="Fachada del local de Óptica Caribbe, Moneda 778 local 0106B" class="rounded-2xl shadow-xl w-full h-[480px] object-cover object-center" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO / UBICACIÓN -->
+    <section id="contacto" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-caribbe-turquoise font-bold uppercase tracking-widest text-sm bg-caribbe/20 px-3 py-1 rounded-full">Comunícate con nosotros</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 mb-6">¿Listo para renovar tus lentes?</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Escríbenos directamente a nuestro WhatsApp para resolver tus dudas sobre recetas, precios de cristales o disponibilidad de modelos en nuestros catálogos.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">WhatsApp Directo</h3>
+                                <p class="text-slate-400 text-sm mb-1">Respuesta rápida y asesoría online</p>
+                                <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="text-caribbe-turquoise font-semibold hover:underline">+56 9 9850 0292</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-caribbe/20 text-caribbe-turquoise flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Dónde estamos</h3>
+                                <p class="text-slate-400 text-sm mb-1">Moneda 778, local 0106B</p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Moneda+778+Santiago+Chile" target="_blank" rel="noopener" class="text-caribbe-turquoise font-semibold hover:underline text-sm">Cómo llegar</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-caribbe/20 text-caribbe-turquoise flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Horarios de Atención</h3>
+                                <p class="text-slate-400 text-sm">Lunes a Sábado: 10:00 - 19:00 hrs</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-caribbe/20 text-caribbe-turquoise flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hashtag text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg">Síguenos</h3>
+                                <p class="text-slate-400 text-sm">
+                                    <a href="https://www.instagram.com/opticacaribbe" target="_blank" rel="noopener" class="text-caribbe-turquoise font-semibold hover:underline">@opticacaribbe</a> · <a href="https://www.tiktok.com/@optica.caribbe" target="_blank" rel="noopener" class="text-caribbe-turquoise font-semibold hover:underline">@optica.caribbe</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-8 sm:p-10 rounded-3xl border border-slate-700 shadow-2xl text-center">
+                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl shadow-lg pulse-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Atención Inmediata</h3>
+                    <p class="text-slate-300 text-sm mb-8">Haz clic abajo para iniciar una conversación en nuestro chat de WhatsApp con un asesor de Óptica Caribbe.</p>
+                    <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20estoy%20en%20su%20web%20y%20deseo%20atenci%C3%B3n" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-4 rounded-xl font-bold text-lg shadow-xl transition-all flex items-center justify-center space-x-3">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Abrir Chat de WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
+                <iframe title="Ubicación Óptica Caribbe" src="https://www.google.com/maps?q=Moneda+778,+Santiago,+Chile&output=embed" class="w-full h-80 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-caribbe flex items-center justify-center text-white">
+                    <i class="fa-solid fa-glasses"></i>
+                </div>
+                <span class="text-lg font-bold text-white tracking-tight">ÓPTICA CARIBBE</span>
+            </div>
+            <p class="text-sm text-center md:text-left">
+                © 2026 Óptica Caribbe (Doble B). Todos los derechos reservados.
+            </p>
+            <div class="flex space-x-4">
+                <a href="https://www.instagram.com/opticacaribbe" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-pink-600 hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@optica.caribbe" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-black hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/56998500292" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quiero%20consultar" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl pulse-whatsapp transition-transform hover:scale-110" aria-label="WhatsApp Chat">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT PARA MENÚ MÓVIL -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // GALERÍA
+        const WA = '56998500292';
+        const COLS = [
+            { id: 'nuevos', name: 'Nuevos Ingresos', n: 115 },
+            { id: 'octubre-2026', name: 'Colección Octubre 2026', n: 84 },
+            { id: 'merel', name: 'Merel Acetato', n: 132 },
+            { id: 'clip-solar', name: 'Lentes con Clip Solar', n: 43 },
+            { id: 'sobre-lentes', name: 'Sobre-lentes', n: 39 },
+            { id: 'sol-2027', name: 'Lentes de Sol 2027', n: 144 }
+        ];
+        const PAGE = 12;
+        let current = 'all', shown = PAGE, list = [], idx = 0;
+        const grid = document.getElementById('gal-grid');
+        const filters = document.getElementById('gal-filters');
+        const moreBtn = document.getElementById('gal-more');
+        const lb = document.getElementById('lightbox');
+
+        function buildList() {
+            list = [];
+            COLS.filter(c => current === 'all' || c.id === current).forEach(c => {
+                for (let i = 1; i <= c.n; i++) list.push({ src: `images/${c.id}/${i}.webp`, col: c.name, num: i });
+            });
+            if (current === 'all') list.sort((a, b) => a.num - b.num || a.col.localeCompare(b.col));
+        }
+        function renderFilters() {
+            const all = [{ id: 'all', name: 'Todos' }, ...COLS];
+            filters.innerHTML = all.map(c => `<button data-id="${c.id}" class="px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${c.id === current ? 'bg-caribbe text-white border-caribbe' : 'bg-white text-slate-600 border-slate-200 hover:border-caribbe hover:text-caribbe'}">${c.name}</button>`).join('');
+            filters.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { current = b.dataset.id; shown = PAGE; renderFilters(); render(); }));
+        }
+        function render() {
+            buildList();
+            grid.innerHTML = list.slice(0, shown).map((p, i) => `<button data-i="${i}" class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all text-left"><img src="${p.src}" alt="${p.col} modelo ${p.num}" loading="lazy" class="w-full aspect-square object-contain bg-white"><span class="block px-3 py-2 text-xs text-slate-500 font-medium">${p.col}</span></button>`).join('');
+            grid.querySelectorAll('button').forEach(b => b.addEventListener('click', () => openLb(+b.dataset.i)));
+            moreBtn.classList.toggle('hidden', shown >= list.length);
+        }
+        function openLb(i) {
+            idx = (i + list.length) % list.length;
+            const p = list[idx];
+            document.getElementById('lb-img').src = p.src;
+            document.getElementById('lb-img').alt = `${p.col} modelo ${p.num}`;
+            document.getElementById('lb-cap').textContent = `${p.col} · foto ${p.num}`;
+            document.getElementById('lb-wa').href = `https://wa.me/${WA}?text=` + encodeURIComponent(`Hola Óptica Caribbe, me interesa el modelo de la foto ${p.num} de ${p.col}. ¿Tienen stock y precio?`);
+            lb.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+        function closeLb() { lb.classList.add('hidden'); document.body.classList.remove('overflow-hidden'); }
+        moreBtn.addEventListener('click', () => { shown += PAGE; render(); });
+        document.getElementById('lb-close').addEventListener('click', closeLb);
+        document.getElementById('lb-prev').addEventListener('click', () => openLb(idx - 1));
+        document.getElementById('lb-next').addEventListener('click', () => openLb(idx + 1));
+        lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+        document.addEventListener('keydown', e => {
+            if (lb.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLb();
+            if (e.key === 'ArrowLeft') openLb(idx - 1);
+            if (e.key === 'ArrowRight') openLb(idx + 1);
+        });
+        renderFilters(); render();
+    </script>
+</body>
+</html>
