@@ -140,176 +140,132 @@
         </div>
     </section>
 
-    <!-- SECCIÓN DE CATÁLOGOS DIVIDIDOS POR MITADES -->
+    <!-- SECCIÓN DE CATÁLOGOS UNIFICADOS -->
     <section id="catalogos" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-caribbe-light px-3 py-1 rounded-full">Nuestras Colecciones</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Catálogos por Categoría y Género</h2>
-                <p class="text-slate-600">Modelos separados para Dama y Caballero en cada colección.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Catálogos de Lentes 2026</h2>
+                <p class="text-slate-600">Explora nuestras colecciones completas y consúltanos por WhatsApp tu modelo favorito.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Grid de 6 colecciones principales -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- 1. METÁLICOS (Octubre 2026): Dama (primera mitad) y Caballero (segunda mitad) -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/octubre-2026/1.webp" alt="Metálicos Dama" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/nuevos/1.webp" alt="Nuevos Ingresos" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe bg-caribbe-light px-2.5 py-1 rounded-md">Colección Octubre</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Metálicos - Dama</h3>
-                            <p class="text-sm text-slate-600 mb-6">Diseños finos y elegantes en estructuras metálicas para ellas.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Nuevos Ingresos</h3>
+                            <p class="text-sm text-slate-600 mb-6">Nuestros últimos ingresos y modelos más solicitados.</p>
                         </div>
-                        <button type="button" data-filter="octubre-2026-dama" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="nuevos" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Dama</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/octubre-2026/45.webp" alt="Metálicos Caballero" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/octubre-2026/1.webp" alt="Colección Octubre 2026" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe-navy bg-slate-200 px-2.5 py-1 rounded-md">Colección Octubre</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Metálicos - Caballero</h3>
-                            <p class="text-sm text-slate-600 mb-6">Estilos modernos, sobrios y resistentes para ellos.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Colección Octubre 2026</h3>
+                            <p class="text-sm text-slate-600 mb-6">Las novedades de la temporada en armazones.</p>
                         </div>
-                        <button type="button" data-filter="octubre-2026-caballero" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="octubre-2026" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Caballero</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- 2. ACETATO (Merel): Dama y Caballero -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/merel/1.webp" alt="Acetato Dama" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/merel/1.webp" alt="Merel Acetato" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe bg-caribbe-light px-2.5 py-1 rounded-md">Línea Merel</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Acetato - Dama</h3>
-                            <p class="text-sm text-slate-600 mb-6">Armazones de acetato con tonalidades exclusivas para mujer.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Merel Acetato</h3>
+                            <p class="text-sm text-slate-600 mb-6">Armazones en acetato con acabados finos y estilo.</p>
                         </div>
-                        <button type="button" data-filter="merel-dama" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="merel" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Dama</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 4 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/merel/70.webp" alt="Acetato Caballero" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/clip-solar/1.webp" alt="Lentes con Clip Solar" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe-navy bg-slate-200 px-2.5 py-1 rounded-md">Línea Merel</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Acetato - Caballero</h3>
-                            <p class="text-sm text-slate-600 mb-6">Marcos de acetato fuertes y elegantes para hombre.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Lentes con Clip Solar</h3>
+                            <p class="text-sm text-slate-600 mb-6">Armazones con clip solar: dos lentes en uno.</p>
                         </div>
-                        <button type="button" data-filter="merel-caballero" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="clip-solar" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Caballero</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
-                <!-- 3. CON MICA / CLIP SOLAR: Dama y Caballero -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 5 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/clip-solar/1.webp" alt="Clip Solar Dama" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/sobre-lentes/1.webp" alt="Sobre-lentes" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe bg-caribbe-light px-2.5 py-1 rounded-md">Clip Solar</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Con Mica / Sol - Dama</h3>
-                            <p class="text-sm text-slate-600 mb-6">Armazones adaptables con protección solar para ellas.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Sobre-lentes</h3>
+                            <p class="text-sm text-slate-600 mb-6">Para usar sobre tus lentes de siempre, con protección UV.</p>
                         </div>
-                        <button type="button" data-filter="clip-solar-dama" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="sobre-lentes" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Dama</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <!-- Catálogo 6 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                     <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                        <img src="images/clip-solar/25.webp" alt="Clip Solar Caballero" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
+                        <img src="images/sol-2027/1.webp" alt="Lentes de Sol 2027" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-caribbe-navy bg-slate-200 px-2.5 py-1 rounded-md">Clip Solar</span>
-                            <h3 class="text-xl font-bold text-slate-900 mt-2 mb-1">Con Mica / Sol - Caballero</h3>
-                            <p class="text-sm text-slate-600 mb-6">Lentes prácticos con clip magnético para hombre.</p>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Lentes de Sol 2027</h3>
+                            <p class="text-sm text-slate-600 mb-6">Gafas solares con diseños modernos y protección UV.</p>
                         </div>
-                        <button type="button" data-filter="clip-solar-caballero" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
+                        <button type="button" data-cat="sol-2027" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
                             <i class="fa-solid fa-images text-sm"></i>
-                            <span>Ver catálogos Caballero</span>
+                            <span>Ver catálogo</span>
                         </button>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Colecciones unificadas -->
-            <div class="mt-12 pt-12 border-t border-slate-200">
-                <h3 class="text-2xl font-extrabold text-slate-900 text-center mb-8">Otras Colecciones Especiales</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
-                        <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="images/nuevos/1.webp" alt="Nuevos Ingresos" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
-                        </div>
-                        <div class="p-6 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-1">Nuevos Ingresos</h3>
-                                <p class="text-sm text-slate-600 mb-6">Modelos destacados y novedades.</p>
-                            </div>
-                            <button type="button" data-filter="nuevos" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-images text-sm"></i>
-                                <span>Ver catálogo</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
-                        <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="images/sol-2027/1.webp" alt="Lentes de Sol" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
-                        </div>
-                        <div class="p-6 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-1">Lentes de Sol 2027</h3>
-                                <p class="text-sm text-slate-600 mb-6">Gafas solares con diseños modernos y protección UV.</p>
-                            </div>
-                            <button type="button" data-filter="sol-2027" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-images text-sm"></i>
-                                <span>Ver catálogo</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col group">
-                        <div class="h-56 bg-white flex items-center justify-center overflow-hidden">
-                            <img src="images/sobre-lentes/1.webp" alt="Sobre-lentes" loading="lazy" class="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300">
-                        </div>
-                        <div class="p-6 flex-1 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-slate-900 mb-1">Sobre-lentes</h3>
-                                <p class="text-sm text-slate-600 mb-6">Para usar sobre tus lentes de siempre.</p>
-                            </div>
-                            <button type="button" data-filter="sobre-lentes" class="cat-btn w-full bg-caribbe hover:bg-caribbe-dark text-white py-3 rounded-xl font-semibold text-center shadow-md transition-colors flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-images text-sm"></i>
-                                <span>Ver catálogo</span>
-                            </button>
-                        </div>
-                    </div>
+            <!-- Banner de consulta rápida WhatsApp -->
+            <div class="mt-16 bg-caribbe-light border border-caribbe/20 rounded-3xl p-8 sm:p-12 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="text-left">
+                    <h3 class="text-2xl font-bold text-caribbe-navy mb-2">¿Viste un modelo que te encantó?</h3>
+                    <p class="text-slate-600 text-sm">Toma nota del código del lente o sácale captura y envíanosla por WhatsApp para cotizar stock y cristales.</p>
                 </div>
+                <a href="https://wa.me/56998500292?text=Hola%20%C3%93ptica%20Caribbe%2C%20vi%20un%20modelo%20en%20los%20cat%C3%A1logos%20y%20quiero%20consultar%20precio" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shrink-0 flex items-center space-x-2 transition-transform hover:scale-105">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Consultar por WhatsApp</span>
+                </a>
             </div>
         </div>
     </section>
@@ -320,7 +276,7 @@
             <div class="text-center max-w-2xl mx-auto mb-10">
                 <span class="text-caribbe font-bold uppercase tracking-widest text-sm bg-caribbe-light px-3 py-1 rounded-full">Galería de modelos</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Mira nuestros modelos y colores</h2>
-                <p class="text-slate-600">Toca una foto para verla en grande y consultar por WhatsApp.</p>
+                <p class="text-slate-600">Toca una foto para verla en grande y consultar por WhatsApp el modelo que te gustó.</p>
             </div>
             <div id="gal-filters" class="flex flex-wrap justify-center gap-2 mb-10"></div>
             <div id="gal-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
@@ -353,21 +309,22 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- SCRIPT DE FILTRADO POR MITADES -->
+    <!-- SCRIPTS -->
     <script>
-        const WA = '56998500292';
-        const SOURCES = [
-            { id: 'nuevos', name: 'Nuevos Ingresos', folder: 'nuevos', start: 1, end: 115 },
-            { id: 'octubre-2026-dama', name: 'Metálicos Dama', folder: 'octubre-2026', start: 1, end: 42 },
-            { id: 'octubre-2026-caballero', name: 'Metálicos Caballero', folder: 'octubre-2026', start: 43, end: 84 },
-            { id: 'merel-dama', name: 'Acetato Dama', folder: 'merel', start: 1, end: 66 },
-            { id: 'merel-caballero', name: 'Acetato Caballero', folder: 'merel', start: 67, end: 132 },
-            { id: 'clip-solar-dama', name: 'Clip Solar Dama', folder: 'clip-solar', start: 1, end: 22 },
-            { id: 'clip-solar-caballero', name: 'Clip Solar Caballero', folder: 'clip-solar', start: 23, end: 43 },
-            { id: 'sobre-lentes', name: 'Sobre-lentes', folder: 'sobre-lentes', start: 1, end: 39 },
-            { id: 'sol-2027', name: 'Lentes de Sol 2027', folder: 'sol-2027', start: 1, end: 144 }
-        ];
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
 
+        const WA = '56998500292';
+        const COLS = [
+            { id: 'nuevos', name: 'Nuevos Ingresos', n: 115 },
+            { id: 'octubre-2026', name: 'Colección Octubre 2026', n: 84 },
+            { id: 'merel', name: 'Merel Acetato', n: 132 },
+            { id: 'clip-solar', name: 'Lentes con Clip Solar', n: 43 },
+            { id: 'sobre-lentes', name: 'Sobre-lentes', n: 39 },
+            { id: 'sol-2027', name: 'Lentes de Sol 2027', n: 144 }
+        ];
         const PAGE = 12;
         let current = 'all', shown = PAGE, list = [], idx = 0;
         const grid = document.getElementById('gal-grid');
@@ -377,50 +334,42 @@
 
         function buildList() {
             list = [];
-            let activeSources = current === 'all' ? SOURCES : SOURCES.filter(s => s.id === current);
-            activeSources.forEach(s => {
-                for (let i = s.start; i <= s.end; i++) {
-                    list.push({ src: `images/${s.folder}/${i}.webp`, cat: s.name, num: i });
-                }
+            COLS.filter(c => current === 'all' || c.id === current).forEach(c => {
+                for (let i = 1; i <= c.n; i++) list.push({ src: `images/${c.id}/${i}.webp`, col: c.name, num: i });
             });
+            if (current === 'all') list.sort((a, b) => a.num - b.num || a.col.localeCompare(b.col));
         }
-
         function renderFilters() {
-            const btns = [{ id: 'all', name: 'Todos' }, ...SOURCES];
-            filters.innerHTML = btns.map(b => `<button data-id="${b.id}" class="px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${b.id === current ? 'bg-caribbe text-white border-caribbe' : 'bg-white text-slate-600 border-slate-200 hover:border-caribbe hover:text-caribbe'}">${b.name}</button>`).join('');
+            const all = [{ id: 'all', name: 'Todos' }, ...COLS];
+            filters.innerHTML = all.map(c => `<button data-id="${c.id}" class="px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${c.id === current ? 'bg-caribbe text-white border-caribbe' : 'bg-white text-slate-600 border-slate-200 hover:border-caribbe hover:text-caribbe'}">${c.name}</button>`).join('');
             filters.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { current = b.dataset.id; shown = PAGE; renderFilters(); render(); }));
         }
-
         function render() {
             buildList();
-            grid.innerHTML = list.slice(0, shown).map((p, i) => `<button data-i="${i}" class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all text-left"><img src="${p.src}" alt="${p.cat} modelo ${p.num}" loading="lazy" class="w-full aspect-square object-contain bg-white"><span class="block px-3 py-2 text-xs text-slate-500 font-medium">${p.cat}</span></button>`).join('');
+            grid.innerHTML = list.slice(0, shown).map((p, i) => `<button data-i="${i}" class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all text-left"><img src="${p.src}" alt="${p.col} modelo ${p.num}" loading="lazy" class="w-full aspect-square object-contain bg-white"><span class="block px-3 py-2 text-xs text-slate-500 font-medium">${p.col}</span></button>`).join('');
             grid.querySelectorAll('button').forEach(b => b.addEventListener('click', () => openLb(+b.dataset.i)));
             moreBtn.classList.toggle('hidden', shown >= list.length);
         }
-
         function openLb(i) {
             idx = (i + list.length) % list.length;
             const p = list[idx];
             document.getElementById('lb-img').src = p.src;
-            document.getElementById('lb-img').alt = `${p.cat} modelo ${p.num}`;
-            document.getElementById('lb-cap').textContent = `${p.cat} · foto ${p.num}`;
-            document.getElementById('lb-wa').href = `https://wa.me/${WA}?text=` + encodeURIComponent(`Hola Óptica Caribbe, me interesa el modelo ${p.num} de ${p.cat}. ¿Tienen stock y precio?`);
+            document.getElementById('lb-img').alt = `${p.col} modelo ${p.num}`;
+            document.getElementById('lb-cap').textContent = `${p.col} · foto ${p.num}`;
+            document.getElementById('lb-wa').href = `https://wa.me/${WA}?text=` + encodeURIComponent(`Hola Óptica Caribbe, me interesa el modelo de la foto ${p.num} de ${p.col}. ¿Tienen stock y precio?`);
             lb.classList.remove('hidden');
             document.body.classList.add('overflow-hidden');
         }
-
         function closeLb() { lb.classList.add('hidden'); document.body.classList.remove('overflow-hidden'); }
         moreBtn.addEventListener('click', () => { shown += PAGE; render(); });
         document.getElementById('lb-close').addEventListener('click', closeLb);
         document.getElementById('lb-prev').addEventListener('click', () => openLb(idx - 1));
         document.getElementById('lb-next').addEventListener('click', () => openLb(idx + 1));
         lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
-
         document.querySelectorAll('.cat-btn').forEach(b => b.addEventListener('click', () => {
-            current = b.dataset.filter; shown = PAGE; renderFilters(); render();
+            current = b.dataset.cat; shown = PAGE; renderFilters(); render();
             document.getElementById('galeria').scrollIntoView({ behavior: 'smooth' });
         }));
-
         renderFilters(); render();
     </script>
 </body>
